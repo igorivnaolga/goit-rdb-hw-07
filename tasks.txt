@@ -13,3 +13,10 @@ FROM
 	DATE_ADD(date, INTERVAL 1 DAY) AS date_plus_one_day
 FROM
 	orders;
+
+3. SELECT 
+	id,
+	date, 
+	UNIX_TIMESTAMP(date) AS unix_timestamp
+FROM
+	orders;
