@@ -6,3 +6,10 @@
 	DAY(date) as day
 FROM
 	orders;
+
+2. SELECT 
+	id,
+	date, 
+	DATE_ADD(date, INTERVAL 1 DAY) AS date_plus_one_day
+FROM
+	orders;
